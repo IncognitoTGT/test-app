@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
-
+let unsortedValues = ["rizz", "ohio", "mog", "gyatt", "skibidi", "toilet", "ohio", "fanum tax"]
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "eye")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("\n")
+            Text("there are \(unsortedValues.count) unsorted values")
+            Text("There arex3 \(Set(unsortedValues).count) sorted values")
+            
         }
-        .padding()
+        .padding(10)
     }
 }
 
